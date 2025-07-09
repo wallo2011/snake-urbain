@@ -29,6 +29,25 @@ export default function HomePage() {
           {/* Dashboard Overview */}
           <DashboardOverview data={dashboardData.overview} />
 
+          {/* Unified Analysis Button */}
+          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl p-6 text-white">
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="text-2xl font-bold mb-2">🎯 Analyse Unifiée Complète</h2>
+                <p className="text-lg opacity-90">
+                  Évaluation globale des 10 composants avec déclaration finale et plan d'action
+                </p>
+              </div>
+              <a
+                href="/unified-analysis"
+                className="bg-white text-purple-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-bold transition-colors inline-flex items-center"
+              >
+                <span className="mr-2">🚀</span>
+                Lancer l'Analyse
+              </a>
+            </div>
+          </div>
+
           {/* Components Grid */}
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
